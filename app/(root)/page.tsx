@@ -1,11 +1,15 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import Modal from "@/components/ui/modal";
+
+export default function SetupPage() {
   return (
     <main>
-      <h1>Admin</h1>
-      <Button>Click Me</Button>
+      <div className="p-4">
+        <Modal title="'test" description="test des" isOpen onClose={() => {}}>
+          chat
+        </Modal>
+      </div>
     </main>
   );
 }
