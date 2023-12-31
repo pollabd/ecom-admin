@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { AlertModal } from "@/components/modals/alert-modal";
+import { ApiAlert } from "@/components/ui/api-alert";
 
 interface SettingsFormProps {
   initialData: Store;
@@ -69,6 +70,8 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({ initialData }) => {
     } catch (error) {
       toast.error("Make sure you remove all products and categories first.");
     } finally {
+      setLoading(false);
+      setOpen(false);
     }
   };
 
@@ -77,7 +80,7 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({ initialData }) => {
       <AlertModal
         isOpen={open}
         onClose={() => setOpen(false)}
-        onConfirm={() => {}}
+        onConfirm={onDelete}
         loading={loading}
       />
       <div className="flex items-center justify-between">
@@ -121,6 +124,8 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({ initialData }) => {
           </Button>
         </form>
       </Form>
+      <Separator />
+      <ApiAlert title="test" description="test-desc" variant="public" />
     </>
   );
 };
