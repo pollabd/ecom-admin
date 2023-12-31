@@ -56,8 +56,9 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({ initialData }) => {
     } finally {
       setLoading(false);
     }
-    console.log(data);
   };
+
+  // ! make on delete
 
   return (
     <>
