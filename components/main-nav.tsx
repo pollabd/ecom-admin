@@ -25,7 +25,7 @@ const MainNav = ({
     },
     {
       href: `/${params.storeId}/categories`,
-      lable: "Billboards",
+      lable: "Categories",
       active: pathname === `/${params.storeId}/categories`,
     },
     {
