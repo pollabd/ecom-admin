@@ -1,4 +1,4 @@
-# Full Stack E-Commerce + Dashboard & CMS
+# E-Commerce + Dashboard & CMS
 
  ***This is the Admin panel to manage your stores and products.***
 
