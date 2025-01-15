@@ -34,8 +34,8 @@ Welcome to the Full Stack E-Commerce project! This application provides a compre
 - **Image Management**:
   - Cloudinary
 - **Deployment**:
-  - Vercel (recommended for Next.js apps)
-  - Docker (optional for containerization)
+  - Vercel 
+  - Docker 
 
 ---
 
