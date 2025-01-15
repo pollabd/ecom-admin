@@ -23,7 +23,7 @@ Welcome to the Full Stack E-Commerce project! This application provides a compre
   - Next.js (App Router)
   - React
   - Tailwind CSS
-  - TypeScript (optional)
+  - TypeScript 
 - **Backend**:
   - Next.js API Routes
   - Prisma (ORM)
